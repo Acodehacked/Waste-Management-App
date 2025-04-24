@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="bg-background min-h-screen">
       <header className="border-b">
-        <div className="container mx-auto py-4 px-4 flex justify-between items-center">
+        <div className="container md:relative fixed left-0 z-[999] bg-white top-0 right-0 bg-auto mx-auto py-4 px-4 flex justify-between items-center">
           <div className="flex items-center">
             <span className="text-2xl font-bold text-green-700">Waste Management</span>
           </div>

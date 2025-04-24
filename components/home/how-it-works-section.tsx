@@ -16,7 +16,7 @@ export function HowItWorksSection() {
             <div className="space-y-12">
               <div className="relative flex items-start md:items-center flex-col md:flex-row">
                 <div className="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right order-2 md:order-1">
-                  <h3 className="text-xl font-bold mb-2 text-green-800">1. Report Waste</h3>
+                  <h3 className="text-xl font-bold mb-2 text-green-800 mt-2">Report Waste</h3>
                   <p className="text-gray-600">
                     Fill out the simple reporting form with details about the waste location, type, and other relevant information.
                   </p>
@@ -35,7 +35,7 @@ export function HowItWorksSection() {
                   </div>
                 </div>
                 <div className="md:w-1/2 md:pl-12 mb-4 md:mb-0 order-2">
-                  <h3 className="text-xl font-bold mb-2 text-green-800">2. Notification</h3>
+                  <h3 className="text-xl font-bold mb-2 text-green-800 mt-2">Notification</h3>
                   <p className="text-gray-600">
                     The panchayat officials receive instant notifications about new waste reports in their jurisdiction.
                   </p>
@@ -44,7 +44,7 @@ export function HowItWorksSection() {
               
               <div className="relative flex items-start md:items-center flex-col md:flex-row">
                 <div className="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right order-2 md:order-1">
-                  <h3 className="text-xl font-bold mb-2 text-green-800">3. Assessment</h3>
+                  <h3 className="text-xl font-bold mb-2 text-green-800 mt-2">Assessment</h3>
                   <p className="text-gray-600">
                     Officials review and assess the reported waste situation, determining the appropriate action needed.
                   </p>
@@ -63,7 +63,7 @@ export function HowItWorksSection() {
                   </div>
                 </div>
                 <div className="md:w-1/2 md:pl-12 mb-4 md:mb-0 order-2">
-                  <h3 className="text-xl font-bold mb-2 text-green-800">4. Action</h3>
+                  <h3 className="text-xl font-bold mb-2 text-green-800 mt-2">Action</h3>
                   <p className="text-gray-600">
                     The waste collection team is dispatched to the location to properly remove and dispose of the waste.
                   </p>
@@ -72,7 +72,7 @@ export function HowItWorksSection() {
               
               <div className="relative flex items-start md:items-center flex-col md:flex-row">
                 <div className="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right order-2 md:order-1">
-                  <h3 className="text-xl font-bold mb-2 text-green-800">5. Resolution</h3>
+                  <h3 className="text-xl font-bold mb-2 text-green-800 mt-2">Resolution</h3>
                   <p className="text-gray-600">
                     Once resolved, the report is marked as complete, and you can check the status of your report at any time.
                   </p>
