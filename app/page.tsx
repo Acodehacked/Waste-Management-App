@@ -1,3 +1,4 @@
+'use client'
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -8,16 +9,19 @@ import { HeroSection } from "@/components/home/hero-section";
 import { StatsSection } from "@/components/home/stats-section";
 import { InfoSection } from "@/components/home/info-section";
 import { HowItWorksSection } from "@/components/home/how-it-works-section";
+import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 export default function Home() {
+  const [open, setopen] = useState(false)
   return (
     <div className="bg-background min-h-screen">
       <header className="border-b">
         <div className="container mx-auto py-4 px-4 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center">
             <span className="text-2xl font-bold text-green-700">Waste Management</span>
           </div>
-          <nav className="hidden md:flex items-center space-x-4">
+          <nav className={cn("md:flex-row flex-col md:relative fixed md:top-0 left-0 right-0 z-[999] md:justify-end justify-start w-full bg-white top-[60px] md:p-0 p-8 md:items-center gap-5 md:flex",open?'flex':'hidden')}>
             <Link href="/" className="text-foreground hover:text-green-700 transition-colors">
               Home
             </Link>
@@ -35,7 +39,7 @@ export default function Home() {
             </Link>
           </nav>
           <div className="md:hidden">
-            <Button variant="ghost" size="icon">
+            <Button onClick={()=>setopen(!open)} variant="ghost" size="icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="4" x2="20" y1="12" y2="12" />
                 <line x1="4" x2="20" y1="6" y2="6" />
